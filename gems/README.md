@@ -16,10 +16,15 @@ All Gems attach the same **"Michal's Voice"** Google Doc as a knowledge file. Vo
 | File | Gem | Status |
 |------|-----|--------|
 | `privacy-preamble.md` | (shared block, all Gems) | ✅ written (story C2) |
-| `billing-gem.md` | Billing (Track A) | ⬜ awaits billing Excel (story C4) |
-| `content-voice-gem.md` | Content/Voice (Track B) | ⬜ after Voice doc (story C5) |
-| `newsletter-gem.md` | Newsletter (Track B) | ⬜ story C8 |
-| `repurpose-gem.md` | Repurpose (Track B) | ⬜ story C8 |
+| `billing-gem.md` | Billing (Track A) | ✅ drafted v1 (story C4) — refine once billing Excel arrives |
+| `content-voice-gem.md` | Content/Voice (Track B) | ✅ drafted v1 (story C5) — the aha-moment Gem |
+| `newsletter-gem.md` | Newsletter (Track B) | ✅ drafted v1 (story C8) |
+| `repurpose-gem.md` | Repurpose (Track B) | ✅ drafted v1 (story C8) |
+
+All four are paste-ready: each file's `---PASTE BELOW--- … ---PASTE ABOVE ENDS---` block goes
+directly into the Gem's instructions box in Gemini. See
+[`docs/track-c-meeting-runbook.md`](../docs/track-c-meeting-runbook.md) for the live sequence
+to stand these up in her account.
 
 ## Hard rules (every Gem, no exceptions)
 - No PII ever enters a Gem. Halt-and-ask on detection.

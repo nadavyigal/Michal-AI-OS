@@ -16,5 +16,8 @@ for the AI Audit Toolkit.
 | [`templates/`](templates/) | AI Audit Toolkit templates backfilled from this engagement |
 
 ## Status
-Track C (foundation) is the active focus. Privacy preamble (story C2) is written.
-Next: account audit (C1) + build "Michal's Voice" doc (C3) from public assets.
+Track C (foundation) is fully drafted: privacy preamble, Voice doc, 3 demo posts, and all
+4 Gems (Billing, Content/Voice, Newsletter, Repurpose) are paste-ready. What's left — account
+audit, standing up the Gems, the PII red-team, and confirming the voice/framing — needs
+Michal's live Gemini account. Scripted step-by-step for the 2026-06-28 evening meeting in
+[`docs/track-c-meeting-runbook.md`](docs/track-c-meeting-runbook.md).

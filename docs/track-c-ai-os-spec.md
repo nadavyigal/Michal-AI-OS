@@ -209,19 +209,21 @@ works regardless of which hub we land on later.
 
 ## 7. Track C stories (one at a time — implement, verify, report, then next)
 
-| # | Story | Output | Done when |
-|---|-------|--------|-----------|
-| C0 | Send the resource-request message + confirm life-coach framing | message sent | Michal replies / files arrive |
-| C1 | **Account audit** in her Gemini account | filled audit table (§1) | all 6 rows answered |
-| C2 | **Write the privacy preamble** | `gems/privacy-preamble.md` | reads clean in Hebrew; PII halt-and-ask explicit |
-| C3 | **Build "Michal's Voice" doc** from public assets | [docs/michal-voice-tone-design.md](michal-voice-tone-design.md) — v1 draft done | 9 sections filled from real sources ✅ draft; **pending her confirmation** on framing, canonical site, and visual identity (4 open questions logged in the doc) |
-| C4 | **Author Billing Gem** instructions | `gems/billing-gem.md` | preamble + §4 skeleton complete |
-| C5 | **Author Content/Voice Gem** instructions | `gems/content-voice-gem.md` | "" |
-| C6 | **Stand up Gems in her account** + attach Voice doc | live Gems | each opens, follows instructions |
-| C7 | **PII red-team** every live Gem | pass/fail log | feeding a name triggers halt-and-ask, every Gem |
-| C8 | Author Newsletter + Repurpose Gems | `gems/newsletter-gem.md`, `gems/repurpose-gem.md` | skeletons complete |
+| # | Story | Output | Status |
+|---|-------|--------|--------|
+| C0 | Resource-request message (+ light framing confirmation line) | [templates/resource-request-message.md](../templates/resource-request-message.md) | ✅ drafted, ready to send tonight |
+| C1 | **Account audit** in her Gemini account | filled audit table (§1) | ⬜ **live tonight** — see [meeting runbook](track-c-meeting-runbook.md) §1 |
+| C2 | **Write the privacy preamble** | `gems/privacy-preamble.md` | ✅ done |
+| C3 | **Build "Michal's Voice" doc** + sample posts | [michal-voice-tone-design.md](michal-voice-tone-design.md), [sample-posts-voice-demo.md](../templates/sample-posts-voice-demo.md) | ✅ v1 draft done; **confirm live tonight** — 4 open questions, see runbook §5 |
+| C4 | **Author Billing Gem** instructions | [gems/billing-gem.md](../gems/billing-gem.md) | ✅ drafted v1 (no billing Excel yet — refine once it arrives) |
+| C5 | **Author Content/Voice Gem** instructions | [gems/content-voice-gem.md](../gems/content-voice-gem.md) | ✅ drafted v1 — this is the aha-moment Gem |
+| C6 | **Stand up all 4 Gems in her account** + attach Voice doc | live Gems | ⬜ **live tonight** — see runbook §2 |
+| C7 | **PII red-team** every live Gem | pass/fail log | ⬜ **live tonight, non-negotiable gate** — see runbook §3 |
+| C8 | Author Newsletter + Repurpose Gems | [gems/newsletter-gem.md](../gems/newsletter-gem.md), [gems/repurpose-gem.md](../gems/repurpose-gem.md) | ✅ drafted v1 |
 
-C2 and C3 don't need her files — start them now, in parallel with C0/C1. C4+ on the billing side waits for the billing Excel.
+**Everything buildable without her live account is done (C0, C2, C3, C4, C5, C8).** The
+remaining stories (C1, C6, C7) require her Gemini account live and are scripted step-by-step in
+[`docs/track-c-meeting-runbook.md`](track-c-meeting-runbook.md) for tonight's meeting.
 
 ---
 
