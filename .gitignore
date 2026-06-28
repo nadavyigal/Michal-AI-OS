@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.local
+# PII guard: never commit alias maps or raw client data
+alias-map*
+*-PII*
+client-data/
