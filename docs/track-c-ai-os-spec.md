@@ -22,7 +22,8 @@ Track C is the foundation. Nothing in A or B works until the Voice doc exists, t
 | 2026-06-28 | **Tier = Google AI Plus** (~₪19/mo), not Pro | Sufficient for the Gems foundation; verify only the knowledge-file caveat (§1 row 2). |
 | 2026-06-28 | **Knowledge hub: decide later** | Voice doc as a standalone Google Doc; hub choice deferred to Track B (§6). |
 | 2026-06-28 | **Antigravity is NOT part of Michal's OS** | It's an agent-first dev IDE for *developers*, not an ops tool for a non-technical coach. Her OS stays Gems-in-the-Gemini-app. Antigravity is at most an optional workbench for Nadav (he already uses Claude Code). |
-| 2026-06-28 | **Engagement gets its own private repo**, not merged into `Michal-full-course-` | Keep our PII/billing architecture out of her deployed product repo (possibly public). That repo is a *read source* for the Voice doc, not the home. |
+| 2026-06-28 | **Engagement gets its own private repo**, not merged into `Michal-full-course-` | Keep our PII/billing architecture out of her deployed product repo (possibly public). That repo is a *read source* for the Voice doc, not the home. Created: `github.com/nadavyigal/Michal-AI-OS` (private). |
+| 2026-06-28 | **Framing correction: dual practice, not pure life/couples coach** | Mining `Michal-full-course-` + `Michal-Business-Card-` shows she also does organizational/management coaching (12yr running an insurance agency, ~20 employees). See [michal-voice-tone-design.md](michal-voice-tone-design.md) §0. **Needs her confirmation** before the audit report locks this in. |
 
 ## 0. Architecture at a glance
 
@@ -188,7 +189,7 @@ works regardless of which hub we land on later.
 | C0 | Send the resource-request message + confirm life-coach framing | message sent | Michal replies / files arrive |
 | C1 | **Account audit** in her Gemini account | filled audit table (§1) | all 6 rows answered |
 | C2 | **Write the privacy preamble** | `gems/privacy-preamble.md` | reads clean in Hebrew; PII halt-and-ask explicit |
-| C3 | **Build "Michal's Voice" doc** from public assets | Google Doc per §3b template | 9 sections filled from real sources |
+| C3 | **Build "Michal's Voice" doc** from public assets | [docs/michal-voice-tone-design.md](michal-voice-tone-design.md) — v1 draft done | 9 sections filled from real sources ✅ draft; **pending her confirmation** on framing, canonical site, and visual identity (4 open questions logged in the doc) |
 | C4 | **Author Billing Gem** instructions | `gems/billing-gem.md` | preamble + §4 skeleton complete |
 | C5 | **Author Content/Voice Gem** instructions | `gems/content-voice-gem.md` | "" |
 | C6 | **Stand up Gems in her account** + attach Voice doc | live Gems | each opens, follows instructions |
