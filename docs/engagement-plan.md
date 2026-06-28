@@ -55,6 +55,7 @@ Pain: flat outsourced copy; IG+FB same content; inactive newsletter; no LinkedIn
 - **Quick win:** Content/Voice Gem producing posts that sound like her.
 - **Sources we pull ourselves:** Instagram, business-card site, course/landing repos. The 20 videos need a link/folder — confirm later.
 - **Build out:** Notion content calendar + 7-prompt social workflow + 20-video publishing plan + bi-weekly newsletter outline generator.
+- **2026-06-28 update:** the strategy build-out (audience mapping, positioning, 5 content pillars / 50 ideas, 30-day calendar, 50 hooks, engagement playbook) is done — see [`social-media-manager/`](../social-media-manager/). Analytics step is a template only, pending her real Instagram/Facebook data.
 
 ### Longer term (roadmap only)
 Lightweight task management and the custom trainee app ("Misha's app"). Capture in roadmap; do not scope now.

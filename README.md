@@ -13,6 +13,7 @@ for the AI Audit Toolkit.
 | [`docs/engagement-plan.md`](docs/engagement-plan.md) | Full 3-track engagement plan (A billing, B content, C OS foundation) |
 | [`docs/track-c-ai-os-spec.md`](docs/track-c-ai-os-spec.md) | **Deep spec for Track C** — the OS foundation, build first |
 | [`gems/`](gems/) | Gem instruction files (the OS "skills"), authored here → pasted into her account |
+| [`social-media-manager/`](social-media-manager/) | Track B strategy layer: audience, positioning, 5 content pillars, 30-day calendar, 50 hooks, engagement playbook — feeds the Content/Voice Gem |
 | [`templates/`](templates/) | AI Audit Toolkit templates backfilled from this engagement |
 
 ## Status
