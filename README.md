@@ -16,6 +16,12 @@ for the AI Audit Toolkit.
 | [`social-media-manager/`](social-media-manager/) | Track B strategy layer: audience, positioning, 5 content pillars, 30-day calendar, 50 hooks, engagement playbook — feeds the Content/Voice Gem |
 | [`templates/`](templates/) | AI Audit Toolkit templates backfilled from this engagement |
 
+## Hebrew versions
+Client-facing files (`social-media-manager/` + `docs/michal-voice-tone-design.md`) each have a
+`.he.md` companion for Michal to read directly. English stays canonical — edit there first,
+port to Hebrew. Internal planning docs (engagement plan, Track C spec, runbook, decision logs)
+stay English-only, since those are Nadav's working docs.
+
 ## Status
 Track C (foundation) is fully drafted: privacy preamble, Voice doc, 3 demo posts, and all
 4 Gems (Billing, Content/Voice, Newsletter, Repurpose) are paste-ready. What's left — account

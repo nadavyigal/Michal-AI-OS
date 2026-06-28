@@ -35,15 +35,22 @@ doesn't replace the Gem — it feeds it.
 
 ## Files
 
-| # | File | What it is | Status |
-|---|------|-----------|--------|
-| 1 | [01-niche-intelligence-audience-mapping.md](01-niche-intelligence-audience-mapping.md) | Who she's talking to, their frustrations, triggers, habits | ✅ done |
-| 2 | [02-market-positioning-brand-strategy.md](02-market-positioning-brand-strategy.md) | What SHINE represents, her unique angle, voice, visual | ✅ done |
-| 3 | [03-content-pillar-architecture.md](03-content-pillar-architecture.md) | 5 pillars, 50 post ideas, why each works | ✅ done |
-| 4 | [04-30-day-content-calendar.md](04-30-day-content-calendar.md) | 30-day calendar, real cadence, ready to feed into the Gem | ✅ done |
-| 5 | [05-viral-hook-formula.md](05-viral-hook-formula.md) | 50 hooks, 5 categories, her real vocabulary | ✅ done |
-| 6 | [06-engagement-community-building.md](06-engagement-community-building.md) | Comment/DM templates, daily routine, collab approach | ✅ done |
-| 7 | [07-analytics-interpreter-template.md](07-analytics-interpreter-template.md) | Framework only — **needs her real Insights data to run for real** | ⬜ template ready, not yet run |
+Each file has a Hebrew companion (`.he.md` suffix) for Michal to read directly — same content,
+translated. **English is canonical**; edit English first, then port changes to the Hebrew
+companion. Hebrew post copy/hooks themselves were already written in Hebrew in both versions
+(nothing to translate there).
+
+| # | File | Hebrew companion | What it is | Status |
+|---|------|-------------------|-----------|--------|
+| 1 | [01-niche-intelligence-audience-mapping.md](01-niche-intelligence-audience-mapping.md) | [.he.md](01-niche-intelligence-audience-mapping.he.md) | Who she's talking to, their frustrations, triggers, habits | ✅ done |
+| 2 | [02-market-positioning-brand-strategy.md](02-market-positioning-brand-strategy.md) | [.he.md](02-market-positioning-brand-strategy.he.md) | What SHINE represents, her unique angle, voice, visual | ✅ done |
+| 3 | [03-content-pillar-architecture.md](03-content-pillar-architecture.md) | [.he.md](03-content-pillar-architecture.he.md) | 5 pillars, 50 post ideas, why each works | ✅ done |
+| 4 | [04-30-day-content-calendar.md](04-30-day-content-calendar.md) | [.he.md](04-30-day-content-calendar.he.md) | 30-day calendar, real cadence, ready to feed into the Gem | ✅ done |
+| 5 | [05-viral-hook-formula.md](05-viral-hook-formula.md) | [.he.md](05-viral-hook-formula.he.md) | 50 hooks, 5 categories, her real vocabulary | ✅ done |
+| 6 | [06-engagement-community-building.md](06-engagement-community-building.md) | [.he.md](06-engagement-community-building.he.md) | Comment/DM templates, daily routine, collab approach | ✅ done |
+| 7 | [07-analytics-interpreter-template.md](07-analytics-interpreter-template.md) | [.he.md](07-analytics-interpreter-template.he.md) | Framework only — **needs her real Insights data to run for real** | ⬜ template ready, not yet run |
+
+Hebrew README: [README.he.md](README.he.md).
 
 ## Honest caveats (read before presenting tonight)
 

@@ -10,6 +10,7 @@ sources:
   - github.com/nadavyigal/landing-page---Michal-course
   - Instagram (handle only, not yet scraped): instagram.com/michal_slonim_life_coach
 next-step: confirm with Michal — see "Open questions" at bottom
+hebrew-companion: docs/michal-voice-tone-design.he.md (this file is canonical; edit here first, port changes to the Hebrew version)
 ---
 
 # Michal's Voice — Tone / Style / Design

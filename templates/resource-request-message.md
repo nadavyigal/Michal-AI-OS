@@ -73,3 +73,31 @@ videos" but not enough to build the publishing plan or the Repurpose Gem against
 
 This can go as a second message any time after the meeting tonight — it doesn't need to be
 sent before, since it's a natural follow-up once you've actually opened the folder together.
+
+---
+
+## Update 2026-06-28 (later still): what's needed from her Instagram/Facebook
+
+Two separate needs, neither involves client PII (her own public content + her own account's
+aggregate metrics):
+
+1. **Real captions** for the Voice doc (open question #4) — everything in the Voice doc so far
+   is mined from her code repos, never from what she's actually posted. Need her **last 15–20
+   IG captions**, text only.
+2. **Insights/analytics** for Step 7 of the Social Media Manager (`social-media-manager/07-...`)
+   — currently a template with no real data. Need reach + engagement per post (last 90 days),
+   top 5 posts by saves/shares, follower growth, profile-visit → link clicks, story completion
+   rate, and Facebook Page Insights if she's actually cross-posting there.
+
+**Hebrew draft — ready to send (can combine with the videos ask above, or send separately):**
+
+```
+עוד שני דברים, כשתהיה לך הזדמנות (לא דחוף):
+
+1. אפשר להעביר לי את הכתוביות של 15-20 הפוסטים האחרונים שלך באינסטגרם? (טקסט בלבד,
+   לא צריך את התמונות) — זה יעזור לי לדייק עוד יותר את "הקול" שבניתי.
+
+2. בהמשך, כשיהיה לך רגע — תוכלי לשלוח לי צילומי מסך מה-Insights של אינסטגרם (הגעה,
+   מעורבות, שמירות, גידול עוקבים, 90 הימים האחרונים)? וגם של פייסבוק אם את מפרסמת
+   שם. זה ייתן לי תמונה אמיתית של מה עובד, במקום השערות.
+```
