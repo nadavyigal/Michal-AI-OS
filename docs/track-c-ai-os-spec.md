@@ -163,9 +163,12 @@ Default posture: **connect nothing for Track C's launch.** The Voice doc goes in
 
 ## 6. Knowledge hub — Google Workspace vs Notion
 
-A genuine fork (see Open Decisions). For a **solo, non-technical** user already paying for Google:
-- **Recommended for Track C:** **Google Workspace** (a Google Doc for the Voice doc + asset library, a Sheet for the aliased billing working copy). Lower friction, already paid, Gems can read Docs natively.
-- **Notion:** better as the **content-calendar board UI** in Track B build-out — defer that decision to Track B; don't add a second tool for the foundation.
+**DECIDED (2026-06-28): decide later.** For the Track C foundation we do **not** stand up a
+hub platform. The Voice doc is built as a **standalone Google Doc** (so Gems can read/attach
+it), and any aliased billing working copy is a standalone Sheet. The Google-Workspace-vs-Notion
+choice is deferred to **Track B**, when the content-calendar board UI actually forces it.
+Rationale: the foundation must not block on a tooling decision, and a standalone Google Doc
+works regardless of which hub we land on later.
 
 ---
 
@@ -198,6 +201,6 @@ C2 and C3 don't need her files — start them now, in parallel with C0/C1. C4+ o
 
 ## 9. Open decisions (need Nadav's call)
 
-1. **Knowledge hub for the foundation:** Google Workspace (recommended) vs Notion now vs decide later. Changes §5 extensions and the Track B calendar build.
-2. **Start C2 (privacy preamble) + C3 (Voice doc) now**, before her files arrive? They don't need her input. Recommended: yes.
+1. ~~Knowledge hub for the foundation~~ — **RESOLVED 2026-06-28: decide later.** Voice doc is a standalone Google Doc; hub choice deferred to Track B. See §6.
+2. **Start C2 (privacy preamble) + C3 (Voice doc) now**, before her files arrive? They don't need her input. Recommended: yes. *(C2 done.)*
 3. **YouTube extension:** wire it in Track C launch, or defer to the Repurpose Gem build in Track B? Recommended: defer.
