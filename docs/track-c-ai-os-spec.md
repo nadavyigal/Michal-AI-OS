@@ -15,6 +15,15 @@ Track C is the foundation. Nothing in A or B works until the Voice doc exists, t
 
 ---
 
+## Decisions log
+
+| Date | Decision | Rationale |
+|------|----------|-----------|
+| 2026-06-28 | **Tier = Google AI Plus** (~₪19/mo), not Pro | Sufficient for the Gems foundation; verify only the knowledge-file caveat (§1 row 2). |
+| 2026-06-28 | **Knowledge hub: decide later** | Voice doc as a standalone Google Doc; hub choice deferred to Track B (§6). |
+| 2026-06-28 | **Antigravity is NOT part of Michal's OS** | It's an agent-first dev IDE for *developers*, not an ops tool for a non-technical coach. Her OS stays Gems-in-the-Gemini-app. Antigravity is at most an optional workbench for Nadav (he already uses Claude Code). |
+| 2026-06-28 | **Engagement gets its own private repo**, not merged into `Michal-full-course-` | Keep our PII/billing architecture out of her deployed product repo (possibly public). That repo is a *read source* for the Voice doc, not the home. |
+
 ## 0. Architecture at a glance
 
 ```
@@ -53,8 +62,8 @@ We are guessing at her setup. Confirm before building. Checklist:
 
 | # | What to verify | Why it matters | If "no" → |
 |---|----------------|----------------|-----------|
-| 1 | Tier: **Gemini Advanced / Google AI Pro** (paid) vs free | Custom Gems + knowledge-file uploads are the whole architecture | Architecture stalls — confirm she's paying for the right tier before anything |
-| 2 | Can she **create a Gem** and **upload a knowledge file** to it | The Voice doc must attach to each Gem | If knowledge files unavailable, fall back to pasting the Voice doc into each Gem's instructions (worse, but works) |
+| 1 | ~~Tier~~ — **CONFIRMED: Google AI Plus** (~₪19/mo, the entry paid tier; *not* AI Pro) | Custom Gems work on AI Plus; the only open item is knowledge-file upload (row 2) | Sufficient for Track C. No upsell to Pro needed for the foundation. |
+| 2 | Can she **upload a knowledge file** to a Gem (up to 10) on **AI Plus** | The Voice doc ideally attaches to each Gem | Docs confirm this for AI Pro/Advanced but are **not explicit for AI Plus** — **verify live**. If unavailable, fall back to **pasting the Voice doc text into each Gem's instructions** (it's ~1–2 pages, fits fine). Architecture survives either way. |
 | 3 | Account type: personal Gmail vs **Google Workspace** | Determines which extensions/apps are even offered | Personal account = fewer Workspace controls; note it |
 | 4 | Which **extensions / connected apps** are already on | We need to know what's wired before we wire more | Audit and document; disconnect anything PII-risky |
 | 5 | **Where her files live** — transcript says **Mac Files**, not Drive | Gemini can't reach local Mac files; she'd upload per-session | Good for privacy by construction; plan for manual upload, not auto-sync |
