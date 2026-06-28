@@ -24,6 +24,7 @@ Track C is the foundation. Nothing in A or B works until the Voice doc exists, t
 | 2026-06-28 | **Antigravity is NOT part of Michal's OS** | It's an agent-first dev IDE for *developers*, not an ops tool for a non-technical coach. Her OS stays Gems-in-the-Gemini-app. Antigravity is at most an optional workbench for Nadav (he already uses Claude Code). |
 | 2026-06-28 | **Engagement gets its own private repo**, not merged into `Michal-full-course-` | Keep our PII/billing architecture out of her deployed product repo (possibly public). That repo is a *read source* for the Voice doc, not the home. Created: `github.com/nadavyigal/Michal-AI-OS` (private). |
 | 2026-06-28 | **Framing correction: dual practice, not pure life/couples coach** | Mining `Michal-full-course-` + `Michal-Business-Card-` shows she also does organizational/management coaching (12yr running an insurance agency, ~20 employees). See [michal-voice-tone-design.md](michal-voice-tone-design.md) §0. **Needs her confirmation** before the audit report locks this in. |
+| 2026-06-28 | **No external Gem marketplace exists; default to custom-only for launch** | Researched it directly (§5a) — Gemini has no GPT-Store-style catalog. Google's pre-made business Gems and Workspace Calendar/Tasks extensions are the only real "external" options; deferred to roadmap so they don't dilute the aha-moment demo. |
 
 ## 0. Architecture at a glance
 
@@ -168,6 +169,30 @@ The **7-prompt social workflow** (theme map → monthly plan → hooks → posts
 | **Maps / Flights / Hotels** | No | Irrelevant to her ops. |
 
 Default posture: **connect nothing for Track C's launch.** The Voice doc goes in as an uploaded knowledge file. Add YouTube only when we build the Repurpose Gem in Track B. This keeps the privacy surface minimal.
+
+---
+
+## 5a. External skills Michal could adopt (researched 2026-06-28)
+
+Nadav asked whether there are existing/external Gems she could adopt on top of the 4 custom
+ones, to enhance the OS further. Researched what actually exists, to avoid recommending
+something that isn't real:
+
+**There is no public Gem marketplace.** Unlike the GPT Store, Gemini has no browse-and-install
+catalog of community Gems — Gems are always custom-built per account, not adopted from a
+library. Anything "external" has to come from one of these three real categories:
+
+| Category | What it actually is | Adopt for Michal? |
+|---|---|---|
+| **Google's pre-made business Gems** (Marketing insights, Sales pitch ideator, Hiring consultant, Outreach specialist, Copy creator, Sentiment analyzer — rolled out Jan 2026) | Pre-built, not custom — appear automatically for eligible accounts | **Verify in C1 account audit** whether her AI Plus tier surfaces these (they may be Workspace-tier gated). If yes: **Copy creator** and **Marketing insights** are plausibly useful alongside our Content/Voice Gem — but only after her Voice doc Gem is proven, so she doesn't dilute the custom one with a generic alternative. |
+| **Workspace Calendar / Tasks / Keep extensions** (beta) | Let Gemini read/act on her calendar, tasks, and notes | Useful for her own scheduling and the "things I need to remember" roadmap item — **but session entries will contain client names/initials**, so the same alias discipline from the privacy preamble applies the moment she connects this. Don't wire it into Track C launch; revisit as a roadmap item once the Billing Gem is proven and we know her actual calendar hygiene. |
+| **YouTube extension** | Already planned (§5, Repurpose Gem) | Yes, already scoped to Track B. |
+
+**Recommendation:** don't add anything here for the Track C launch. The highest-leverage move
+is proving the 4 custom Gems work first — a pre-made generic Gem competing for her attention
+right after the "aha moment" demo would muddy the signal. Revisit Google's pre-made Gems and
+the Calendar/Tasks extensions as **roadmap items**, gated on (a) what C1's account audit
+actually shows is available on her tier, and (b) the custom Gems already landing well.
 
 ---
 
