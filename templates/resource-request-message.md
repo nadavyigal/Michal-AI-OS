@@ -43,3 +43,33 @@ raise both tonight:
    names — they need aliasing **before** they touch Gemini, Notion, or this repo. Either ask her
    to re-export with aliases already in, or alias them yourself the moment they land, before
    using them anywhere. Do not paste either file as-is into any AI tool.
+
+---
+
+## Update 2026-06-28 (later): video folder checked — link gives files, not content
+
+Checked the Drive link she sent
+(`drive.google.com/drive/folders/1N_J3jdoZd6Xba0j8VKuASrjLDOjuj6Lp`). It has 19 raw edited
+video files (#2 missing from the numbering), generically named, owned by her editor's Gmail —
+not hers. No topics, captions, or transcripts exist. That's enough to resolve "where are the
+videos" but not enough to build the publishing plan or the Repurpose Gem against real content.
+
+**Hebrew draft — what's still needed, ready to send:**
+
+```
+היי מיכל, תודה על הקבצים! 🙏
+
+לפני שאני בונה את תוכנית הפרסום ל-20 הסרטונים, אני צריך עוד שני דברים:
+
+1. רשימה קצרה של נושא לכל סרטון (שורה אחת לכל מספר — "סרטון 5: גבולות בזוגיות" וכו').
+   אם יש לך תמלול או כתוביות לחלק מהם, גם זה מעולה — לא חובה לכולם.
+   שמתי לב שבתיקיה שקיבלתי אין סרטון מספר 2 — חסר, או שהוא בשם אחר?
+
+2. חודש אחד לדוגמה מההערות השבועיות שלך (איך שאת בעצמך רושמת אותן כל שבוע — לא
+   הטבלה הסופית, אלא הרישום הגולמי) — עם כינויים במקום שמות, כמו בכל מקום אחר.
+
+זה כל מה שאני צריך כדי להתחיל לבנות בפועל. 🙌
+```
+
+This can go as a second message any time after the meeting tonight — it doesn't need to be
+sent before, since it's a natural follow-up once you've actually opened the folder together.

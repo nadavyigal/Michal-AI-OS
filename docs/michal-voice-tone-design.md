@@ -176,3 +176,42 @@ interchangeable with any coach's account.
 This is v1, built entirely from code/text already in her repos. Confirming with Michal (3
 sample posts → does it sound like her, per the Track C verification plan) is the next step,
 not optional.
+
+---
+
+## Update 2026-06-28: 20-video folder found, content still unknown
+
+Her video editor's Drive folder (`drive.google.com/drive/folders/1N_J3jdoZd6Xba0j8VKuASrjLDOjuj6Lp`,
+named "ערוכים" / "Edited," owned by `yair92463@gmail.com`) contains **19 raw MP4 files**
+numbered 1, 3–20 (file **#2 is missing from the sequence** — confirm with her/the editor
+whether that's intentional, a rename, or a real gap). Filenames are generic
+("מיכל סרטון [N] [תיקון].mp4") with no topic info.
+
+This resolves the *location* open item but not the *content* one: I can see the file list,
+not the video content — no transcripts, captions, or topic descriptions exist yet. The
+Repurpose Gem and the 20-video publishing plan (Track B) cannot start on real material until
+we get **a one-line topic per video**, at minimum. See the follow-up ask in
+`templates/resource-request-message.md` ("Update 2: video topics").
+
+Also worth a one-line flag, not urgent: the folder is owned by her **editor's personal Gmail**,
+not Michal's own Drive. Fine for now since it's shared as "anyone with the link," but worth
+knowing if that relationship ever changes — the files aren't in an account she controls.
+
+## How to use this doc (practical guidance)
+
+- **It is the single edit point.** Attached as a knowledge file to 3 of the 4 Gems — Content/
+  Voice, Newsletter, Repurpose. **Not** the Billing Gem (closed box, no knowledge file by
+  design). Edit this file once, re-export to the Google Doc, re-upload to those 3 Gems — don't
+  patch individual Gem instructions with voice tweaks, or they'll drift out of sync with each
+  other.
+- **After every voice-confirmation moment** (e.g. tonight's demo, or any time Michal says "this
+  doesn't sound like me" / "yes, exactly"), capture the *specific* phrase or structural note
+  here, in §2–§4 or §9, not just in a Gem's instructions. The Gems should never know more about
+  her voice than this doc does.
+- **Outside Gemini:** if any other tool is used for her content (a video script draft, a one-
+  off ChatGPT session, anything not running through her Gems), paste the relevant section
+  (usually §2 Voice & tone + §3 Signature phrases + §8 Do/Don't) as context first. The doc's
+  value isn't locked to the Gemini surface.
+- **Don't let it go stale.** The visual-identity and framing sections are explicitly marked
+  "pending confirmation" — revisit this doc after tonight's meeting answers land, and again any
+  time her business framing or instagram tone visibly shifts.
