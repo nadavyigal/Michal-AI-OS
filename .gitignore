@@ -5,3 +5,8 @@ node_modules/
 alias-map*
 *-PII*
 client-data/
+# Billing is LOCAL-ONLY — never track it in this repo, even if a folder appears here
+billing/
+billing-local/
+*billing-local*
+*PRIVATE_DO_NOT_UPLOAD*
