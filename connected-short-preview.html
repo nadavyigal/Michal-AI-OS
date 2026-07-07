@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>מחוברים מחדש - עמוד מקוצר</title>
+  <style>
+    :root {
+      --ink: #405666;
+      --deep: #2f5262;
+      --soft: #f5eee6;
+      --paper: #fffaf4;
+      --blush: #e5bbb2;
+      --line: #d8c8bb;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Helvetica Neue", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      place-items: center;
+      padding: 36px 22px 54px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(255, 250, 244, 0.55), rgba(255, 250, 244, 0.72)),
+        url("https://static.wixstatic.com/media/acb337_5ac8acf7b1b54665a569b63b1d7c6af0~mv2.jpg/v1/fill/w_1401,h_843,al_c,q_85,enc_avif,quality_auto/acb337_5ac8acf7b1b54665a569b63b1d7c6af0~mv2.jpg") center / cover;
+    }
+
+    .hero-inner {
+      width: min(880px, 100%);
+    }
+
+    .logo {
+      width: 142px;
+      height: auto;
+      margin-bottom: 34px;
+      opacity: 0.88;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 22px;
+      color: #697b86;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--deep);
+      font-size: clamp(44px, 7vw, 76px);
+      line-height: 1.08;
+      font-weight: 800;
+    }
+
+    .hero-copy {
+      max-width: 790px;
+      margin: 24px auto 0;
+      font-size: clamp(21px, 2.5vw, 30px);
+      line-height: 1.55;
+      font-weight: 700;
+      color: var(--deep);
+    }
+
+    .subcopy {
+      max-width: 690px;
+      margin: 22px auto 0;
+      font-size: 20px;
+      color: #506a78;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      margin-top: 28px;
+      padding: 13px 36px;
+      border-radius: 999px;
+      background: var(--deep);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 14px 28px rgba(47, 82, 98, 0.18);
+    }
+
+    section {
+      padding: 76px 22px;
+    }
+
+    .band {
+      background: var(--soft);
+    }
+
+    .container {
+      width: min(1040px, 100%);
+      margin: 0 auto;
+    }
+
+    .narrow {
+      width: min(800px, 100%);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      color: var(--deep);
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 34px;
+    }
+
+    .card {
+      min-height: 138px;
+      padding: 24px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.64);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--deep);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+      gap: 44px;
+      align-items: center;
+    }
+
+    .media {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      box-shadow: 0 18px 48px rgba(64, 86, 102, 0.16);
+    }
+
+    .list {
+      display: grid;
+      gap: 13px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list li {
+      padding: 15px 18px;
+      border-right: 5px solid var(--blush);
+      background: rgba(255, 255, 255, 0.58);
+      font-size: 19px;
+    }
+
+    .price {
+      display: inline-block;
+      margin: 10px 0 8px;
+      color: var(--deep);
+      font-size: clamp(48px, 6vw, 68px);
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .strike {
+      text-decoration: line-through;
+      color: #7a8990;
+    }
+
+    .footer-cta {
+      background: var(--deep);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .footer-cta h2,
+    .footer-cta p {
+      color: var(--white);
+    }
+
+    .footer-cta .button {
+      background: var(--paper);
+      color: var(--deep);
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        min-height: 86vh;
+        padding-top: 24px;
+      }
+
+      .logo {
+        width: 112px;
+        margin-bottom: 22px;
+      }
+
+      .grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 58px 18px;
+      }
+
+      .card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="hero-inner">
+        <img class="logo" alt="SHINE by Michal Slonim" src="https://static.wixstatic.com/media/acb337_de171cc42b3746069fcaadb10f29965f~mv2.png/v1/fill/w_282,h_222,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%20%D7%9E%D7%99%D7%9B%D7%9C%20%D7%A1%D7%9C%D7%95%D7%A0%D7%99%D7%9D%20%D7%9C%D7%95%D7%92%D7%95%20%D7%A9%D7%A7%D7%95%D7%A3.png">
+        <p class="eyebrow">קורס זוגי קצר ומעשי</p>
+        <h1>מחוברים מחדש</h1>
+        <p class="hero-copy">להבין למה אותם ריבים חוזרים שוב ושוב - ולהפוך קונפליקט זוגי להזדמנות לקרבה, תקשורת וחיבור.</p>
+        <p class="subcopy">אם נמאס לכם משתיקות ארוכות, מריחוק, או מהרגשה שלא מבינים אתכם, הקורס הזה נבנה בדיוק בשבילכם.</p>
+        <a class="button" href="#join">כן, אני רוצה להתחבר מחדש</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="narrow">
+        <h2>למה זה קורה?</h2>
+        <p>הרבה זוגות מנסים לדבר, להסביר, לוותר, להירגע או פשוט "להמשיך הלאה". אבל כשהשורש של הריב לא באמת מובן, גם ההשלמה לא מחזיקה הרבה זמן.</p>
+        <p>בקורס תלמדו לזהות מה באמת מופעל אצלכם בזמן ריב: הפצעים, הציפיות, הפחדים והדפוסים שכל אחד מביא איתו לקשר.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container">
+        <div class="narrow">
+          <h2>מה הקורס ייתן לכם?</h2>
+        </div>
+        <div class="grid">
+          <div class="card">להפסיק לחזור שוב ושוב לאותו ריב.</div>
+          <div class="card">לדבר גם על נושאים רגישים בלי להתרחק.</div>
+          <div class="card">להבין מה כל אחד מכם באמת צריך בתוך הקשר.</div>
+          <div class="card">לצאת מקונפליקט בתחושת קרבה ולא בדידות.</div>
+          <div class="card">להפוך רגעים של כעס להזדמנות להבנה.</div>
+          <div class="card">ליצור בבית יותר ביטחון, הקשבה ושותפות.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <h2>מה מחכה לכם בפנים?</h2>
+          <p>קורס ממוקד, מעשי וברור, עם שיעורים וכלים שתוכלו ליישם כבר בבית.</p>
+          <ul class="list">
+            <li>איך פצעי ילדות משפיעים על הבחירה הזוגית ועל הריבים.</li>
+            <li>איך לזהות את הדפוס שחוזר אצלכם בזמן קונפליקט.</li>
+            <li>איך להקשיב ולהגיב מתוך אחריות ולא מתוך האשמה.</li>
+            <li>איך להתחיל שינוי גם אם רק אחד מבני הזוג עושה את הקורס.</li>
+          </ul>
+          <a class="button" href="#join">מתאים לי, אני רוצה להצטרף</a>
+        </div>
+        <img class="media" alt="מוקאפ קורס מחוברים מחדש" src="https://static.wixstatic.com/media/acb337_62f50a1b68864f0cbed588b7992a86a6~mv2.webp/v1/fill/w_363,h_183,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%9E%D7%95%D7%A7%D7%90%D7%A4%20%D7%A7%D7%95%D7%A8%D7%A1%20%D7%9E%D7%97%D7%95%D7%91%D7%A8%D7%99%D7%9D%20%D7%9E%D7%97%D7%93%D7%A9%20copy%202.webp">
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container split">
+        <img class="media" alt="מיכל סלונים" src="https://static.wixstatic.com/media/acb337_914ae7c1feb34fafa5e0812f02e598f0~mv2.webp/v1/fill/w_305,h_352,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/%D7%9E%D7%99%D7%9B%D7%9C%20%D7%91%D7%9B%D7%95%D7%A8%D7%A1%D7%94%20%D7%A2%D7%9D%20%D7%A4%D7%A1%20%D7%95%D7%A8%D7%95%D7%93.webp">
+        <div>
+          <h2>למי זה מתאים?</h2>
+          <p>לזוגות או לאחד מבני הזוג שמרגישים שהם אוהבים, אבל מתקשים לדבר. שהריבים חוזרים ולא באמת נפתרים. שיש ריחוק, שתיקות או תחושת בדידות בתוך הקשר.</p>
+          <p>ולמי שרוצה להחזיר יותר קרבה, אינטימיות ותקשורת טובה לחיים בבית.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="footer-cta">
+      <div class="narrow">
+        <h2>ההשקעה שלכם</h2>
+        <p>הקורס "מחוברים מחדש" זמין עכשיו במחיר השקה:</p>
+        <div class="price">197 ש"ח בלבד</div>
+        <p>במקום <span class="strike">297 ש"ח</span></p>
+        <p>השקעה קטנה שיכולה לפתוח דרך חדשה לדבר, להבין ולהתקרב.</p>
+        <a class="button" href="#">אני רוצה להצטרף ל"מחוברים מחדש"</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
