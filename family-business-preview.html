@@ -295,6 +295,26 @@
       color: var(--deep);
     }
 
+    .site-footer {
+      padding: 34px clamp(20px, 5vw, 64px);
+      background: var(--deep);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px 30px;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.88;
+    }
+
     @media (max-width: 900px) {
       .hero,
       .split,
@@ -468,5 +488,13 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://michal-slonim-business-card.vercel.app/" target="_blank" rel="noopener">כרטיס ביקור</a>
+      <a href="https://michal-slonim-business-card.vercel.app/" target="_blank" rel="noopener">האתר שלי</a>
+      <a href="https://instagram.com/michal_slonim" target="_blank" rel="noopener">אינסטגרם</a>
+    </div>
+  </footer>
 </body>
 </html>
