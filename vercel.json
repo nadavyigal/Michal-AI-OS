@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/family-business-preview.html"
+    }
+  ]
+}
