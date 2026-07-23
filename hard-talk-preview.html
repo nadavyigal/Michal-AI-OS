@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>איך לנהל שיחה קשה | הרצאה של מיכל סלונים</title>
-  <meta name="description" content="הרצאה לארגונים וצוותים על ניהול שיחות קשות: להבין את דפוס התגובה שלנו בקונפליקט, להישאר נוכחים כשהרגשות עולים, ולנהל שיחות שמובילות לפתרונות במקום להסלמה.">
+  <meta name="description" content="הרצאה על ניהול שיחות קשות. כלים פשוטים ויישומיים שיעזרו לנהל שיחות מורכבות בצורה רגועה, ברורה ומקדמת.">
   <meta property="og:title" content="איך לנהל שיחה קשה">
-  <meta property="og:description" content="שיחה קשה לא חייבת להסתיים בתסכול. כלים פשוטים ויישומיים לניהול שיחות מורכבות בצורה רגועה, ברורה ומקדמת.">
+  <meta property="og:description" content="שיחה קשה לא חייבת להסתיים בתסכול. כשאנחנו יודעים לנהל אותה נכון, היא יכולה להפוך להזדמנות.">
   <meta property="og:locale" content="he_IL">
   <style>
     :root {
@@ -127,13 +127,6 @@
       font-weight: 700;
     }
 
-    .hero-note {
-      max-width: 630px;
-      margin: 22px 0 0;
-      color: #52666e;
-      font-size: 19px;
-    }
-
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
@@ -179,7 +172,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 22%;
+      object-position: center 30%;
       display: block;
     }
 
@@ -272,6 +265,7 @@
       margin: 26px 0 0;
       padding: 0;
       list-style: none;
+      text-align: start;
     }
 
     .list li {
@@ -281,42 +275,7 @@
       font-size: 19px;
     }
 
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 34px;
-    }
-
-    .step {
-      padding: 24px 20px;
-      border-radius: 8px;
-      background: var(--white);
-      border: 1px solid var(--line);
-    }
-
-    .num {
-      color: var(--rose);
-      font-size: 15px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .step h3 {
-      min-height: 62px;
-      margin: 10px 0 12px;
-      color: var(--deep);
-      font-size: 24px;
-      line-height: 1.25;
-    }
-
-    .step p {
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.6;
-    }
-
-    .bonus {
+    .panel {
       width: min(880px, 100%);
       margin: 0 auto;
       padding: clamp(28px, 5vw, 46px);
@@ -326,17 +285,42 @@
       text-align: center;
     }
 
-    .bonus h2 {
+    .panel h2 {
       margin-bottom: 16px;
     }
 
-    .bonus p:last-child {
+    .panel p:last-child {
       margin-bottom: 0;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      width: min(880px, 100%);
+      margin: 0 auto;
+    }
+
+    .details div {
+      padding: 26px 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .details p {
+      margin: 0;
+      font-size: 19px;
+    }
+
+    .details strong {
+      color: var(--deep);
     }
 
     .about {
       display: grid;
-      grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+      grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
       gap: clamp(28px, 5vw, 58px);
       align-items: center;
     }
@@ -350,10 +334,8 @@
 
     .about-photo img {
       width: 100%;
-      height: 100%;
-      max-height: 460px;
+      aspect-ratio: 191 / 157;
       object-fit: cover;
-      object-position: center 20%;
       display: block;
     }
 
@@ -408,8 +390,8 @@
     @media (max-width: 900px) {
       .hero,
       .split,
-      .steps,
       .problem-grid,
+      .details,
       .about {
         grid-template-columns: 1fr;
       }
@@ -430,14 +412,6 @@
       .button {
         width: 100%;
         max-width: 340px;
-      }
-
-      .step h3 {
-        min-height: auto;
-      }
-
-      .about-photo img {
-        max-height: 380px;
       }
     }
 
@@ -467,147 +441,115 @@
       <small>SHINE BY MICHAL SLONIM</small>
       <span>מיכל סלונים</span>
     </div>
-    <a class="toplink" href="#contact">להזמנת הרצאה</a>
+    <a class="toplink" href="#contact">לפרטים ולהזמנת הרצאה</a>
   </nav>
 
   <main>
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">הרצאה לארגונים, צוותים ומנהלים</p>
+        <p class="eyebrow">הרצאה</p>
         <h1>איך לנהל שיחה קשה</h1>
-        <p class="lead">שיחה קשה לא חייבת להסתיים בתסכול. כשיודעים לנהל אותה נכון, היא הופכת להזדמנות.</p>
-        <p class="hero-note">הרצאה קלילה, שוברת שגרה ומלאה בדוגמאות מהחיים ובכלים מעשיים שאפשר ליישם כבר מהשיחה הבאה.</p>
-        <ul class="hero-meta">
-          <li>משך ההרצאה: כשעה</li>
-          <li>לצוותים, מנהלים ואנשי שירות</li>
-          <li>כלים ליישום מיידי</li>
-        </ul>
-        <a class="button" href="#contact">להזמנת הרצאה</a>
+        <p class="lead">כולנו פוגשים שיחות מאתגרות – עם לקוח לא מרוצה, בין קולגות, מול עובדים, מנהלים או ספקים.</p>
+        <a class="button" href="#contact">לפרטים ולהזמנת הרצאה</a>
       </div>
       <div class="hero-photo">
-        <img src="assets/michal-hard-talk.jpg"
-             alt="מיכל סלונים"
-             onerror="this.onerror=null;this.src='https://michal-slonim-business-card.vercel.app/assets/michal-photo-BzyjjMOY.jpg';">
+        <img src="assets/michal-hard-talk.png" alt="מיכל סלונים">
       </div>
     </header>
 
     <section>
-      <div class="narrow">
-        <h2>כולנו פוגשים שיחות מאתגרות</h2>
-        <p>עם לקוח לא מרוצה, בין קולגות, מול עובדים, מנהלים או ספקים.</p>
-        <p>ברגעים כאלה, לכל אחד מאיתנו יש דפוס תגובה אחר: יש מי שנכנס לעימות, יש מי שנסגר ושותק, יש מי שקופא, מתבלבל או נמנע מהשיחה לחלוטין.</p>
-      </div>
-    </section>
-
-    <section class="band">
       <div class="container">
         <div class="narrow">
-          <h2>מה קורה לנו בשיחה קשה</h2>
+          <p>ברגעים כאלה, לכל אחד מאיתנו יש דפוס תגובה אחר:</p>
         </div>
         <div class="problem-grid">
-          <div class="pill">נכנסים לעימות</div>
-          <div class="pill">נסגרים ושותקים</div>
-          <div class="pill">קופאים במקום</div>
-          <div class="pill">מתבלבלים ומאבדים את החוט</div>
-          <div class="pill">נמנעים מהשיחה לחלוטין</div>
-          <div class="pill">דוחים את השיחה שוב ושוב</div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container split">
-        <div>
-          <h2>במה נעסוק?</h2>
-          <p>בהרצאה נלמד כלים פשוטים ויישומיים שיעזרו לנהל שיחות מורכבות בצורה רגועה, ברורה ומקדמת.</p>
-          <ul class="list">
-            <li>נכיר את סגנון התקשורת שלנו במצבי קונפליקט.</li>
-            <li>נבין למה שיחות מסוימות מפעילות אותנו יותר מאחרות.</li>
-            <li>נלמד כיצד להישאר נוכחים גם כשהרגשות עולים.</li>
-            <li>נקבל כלים לניהול שיחות שמובילות לפתרונות במקום להסלמה.</li>
-          </ul>
-          <a class="button" href="#contact">לבדוק אם ההרצאה מתאימה לצוות שלכם</a>
-        </div>
-        <div class="quote-panel">
-          <p>שיחה קשה יכולה להפוך להזדמנות: לחזק אמון, לשפר מערכות יחסים, לפתור קונפליקטים, ואפילו להפוך לקוח לא מרוצה ללקוח נאמן.</p>
+          <div class="pill">יש מי שנכנס לעימות</div>
+          <div class="pill">יש מי שנסגר ושותק</div>
+          <div class="pill">יש מי שקופא, מתבלבל או נמנע מהשיחה לחלוטין</div>
         </div>
       </div>
     </section>
 
     <section class="band">
-      <div class="container">
-        <div class="narrow">
-          <h2>התוצאה?</h2>
+      <div class="container split">
+        <div>
+          <p>בהרצאה נלמד כלים פשוטים ויישומיים שיעזרו לנהל שיחות מורכבות בצורה רגועה, ברורה ומקדמת.</p>
+          <a class="button" href="#contact">לפרטים ולהזמנת הרצאה</a>
         </div>
-        <div class="steps">
-          <div class="step">
-            <div class="num">01</div>
-            <h3>התמודדות טובה יותר עם קונפליקטים</h3>
-            <p>עובדים ומנהלים שיודעים איך להיכנס לשיחה מורכבת ולצאת ממנה עם פתרון.</p>
-          </div>
-          <div class="step">
-            <div class="num">02</div>
-            <h3>תקשורת יעילה ומכבדת</h3>
-            <p>שיח ברור שלא הופך לוויכוח אישי, גם כשיש חילוקי דעות אמיתיים.</p>
-          </div>
-          <div class="step">
-            <div class="num">03</div>
-            <h3>שיתוף פעולה בתוך הצוות</h3>
-            <p>פחות חיכוכים מיותרים, יותר אמון ועבודה משותפת.</p>
-          </div>
-          <div class="step">
-            <div class="num">04</div>
-            <h3>שירות טוב יותר ללקוחות</h3>
-            <p>גם שיחה עם לקוח לא מרוצה יכולה לחזק את הקשר במקום לשבור אותו.</p>
-          </div>
+        <div class="quote-panel">
+          <p>אבל שיחה קשה לא חייבת להסתיים בתסכול. כשאנחנו יודעים לנהל אותה נכון, היא יכולה להפוך להזדמנות – לחזק אמון, לשפר מערכות יחסים, לפתור קונפליקטים, להגביר שיתוף פעולה, ואפילו להפוך לקוח לא מרוצה ללקוח נאמן.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="bonus">
-        <h2>והבונוס?</h2>
-        <p>הכלים שנלמדים בהרצאה לא נשארים רק במקום העבודה. הם מלווים אותנו גם בבית, בזוגיות, בהורות ובכל מערכת יחסים משמעותית בחיים.</p>
+      <div class="narrow">
+        <h2>במה נעסוק?</h2>
+        <ul class="list">
+          <li>נכיר את סגנון התקשורת שלנו במצבי קונפליקט.</li>
+          <li>נבין למה שיחות מסוימות מפעילות אותנו יותר מאחרות.</li>
+          <li>נלמד כיצד להישאר נוכחים גם כשהרגשות עולים.</li>
+          <li>נקבל כלים לניהול שיחות שמובילות לפתרונות במקום להסלמה.</li>
+        </ul>
       </div>
     </section>
 
     <section class="band">
       <div class="narrow">
-        <h2>לא עוד הרצאה על "מה להגיד"</h2>
-        <p>נלמד להבין מה קורה לנו מבפנים ברגעי קונפליקט. כשמבינים את מקור התגובה שלנו, התקשורת משתנה באופן טבעי.</p>
-        <p>משם אפשר לנהל שיחות בצורה רגועה, ברורה ומקרבת יותר.</p>
+        <h2>התוצאה?</h2>
+        <p>עובדים ומנהלים שידעו להתמודד טוב יותר עם קונפליקטים, לייצר תקשורת יעילה ומכבדת, לשפר את שיתוף הפעולה בתוך הצוות, להעניק שירות טוב יותר ללקוחות ולהפחית חיכוכים מיותרים.</p>
       </div>
     </section>
 
     <section>
+      <div class="panel">
+        <h2>והבונוס?</h2>
+        <p>הכלים שנלמדים בהרצאה לא נשארים רק במקום העבודה – הם מלווים אותנו גם בבית, בזוגיות, בהורות ובכל מערכת יחסים משמעותית בחיים.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="narrow">
+        <p>לא מדובר בעוד הרצאה על "מה להגיד". נלמד להבין מה קורה לנו מבפנים ברגעי קונפליקט – כי כשמבינים את מקור התגובה שלנו, התקשורת משתנה באופן טבעי. משם אפשר לנהל שיחות בצורה רגועה, ברורה ומקרבת יותר.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="details">
+        <div>
+          <p><strong>משך ההרצאה: כשעה.</strong></p>
+        </div>
+        <div>
+          <p>הרצאה קלילה, שוברת שגרה ומלאה בדוגמאות מהחיים ובכלים מעשיים שאפשר ליישם כבר מהשיחה הבאה.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
       <div class="container about">
         <div class="about-photo">
-          <img src="assets/michal-hard-talk.jpg"
-               alt="מיכל סלונים"
-               onerror="this.onerror=null;this.src='https://michal-slonim-business-card.vercel.app/assets/michal-photo-BzyjjMOY.jpg';">
+          <img src="assets/michal-hard-talk.png" alt="מיכל סלונים">
         </div>
         <div>
           <h2>קצת עליי</h2>
-          <p class="about-role">מיכל סלונים, מאמנת אישית וזוגית בשיטת סאטיה, פיתוח מנהלים</p>
+          <p class="about-role">מיכל סלונים – מאמנת אישית וזוגית בשיטת סאטיה, פיתוח מנהלים.</p>
           <p>ב-12 השנים האחרונות אני מלווה אנשים, זוגות ומנהלים ביצירת תקשורת טובה יותר, בניהול מערכות יחסים ובהתמודדות עם אתגרים אישיים ומקצועיים.</p>
           <p>לפני עולם האימון עבדתי במשך 15 שנה כסוכנת ביטוח וניהלתי סוכנות ביטוח משפחתית גדולה, עם כ-20 עובדים ואלפי לקוחות. הניסיון העסקי, לצד עולם האימון, מאפשר לי לחבר בין הבנה עמוקה של אנשים לבין המציאות היומיומית של ארגונים ועסקים.</p>
-          <p>לעולם האימון הגעתי במקרה, והתאהבתי.</p>
+          <p>לעולם האימון הגעתי במקרה – והתאהבתי.</p>
         </div>
       </div>
     </section>
 
     <section class="cta">
       <div class="narrow">
-        <h2>רוצים להביא את ההרצאה לארגון שלכם?</h2>
-        <p>לפרטים ולהזמנת הרצאה, אשמח להיות בקשר.</p>
-        <a class="button" href="#contact">להזמנת הרצאה</a>
+        <h2>לפרטים ולהזמנת הרצאה – אשמח להיות בקשר.</h2>
+        <a class="button" href="#contact">לפרטים ולהזמנת הרצאה</a>
       </div>
     </section>
 
     <section id="contact">
       <div class="narrow">
-        <h2>השאירו פרטים ונחזור אליכם</h2>
-        <p>מלאו את הטופס ונתאם שיחה קצרה על ההרצאה, הקהל והמועד המתאים.</p>
+        <h2>השאירו פרטים</h2>
       </div>
       <div class="container">
         <script type='text/javascript' src='//form2.ravpage.co.il/62da1f34fa7a783c6e29da765769940f6A55EB3A' charset='UTF-8'></script>
