@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>איך לנהל שיחה קשה | הרצאה של מיכל סלונים</title>
+  <meta name="description" content="הרצאה לארגונים וצוותים על ניהול שיחות קשות: להבין את דפוס התגובה שלנו בקונפליקט, להישאר נוכחים כשהרגשות עולים, ולנהל שיחות שמובילות לפתרונות במקום להסלמה.">
+  <meta property="og:title" content="איך לנהל שיחה קשה">
+  <meta property="og:description" content="שיחה קשה לא חייבת להסתיים בתסכול. כלים פשוטים ויישומיים לניהול שיחות מורכבות בצורה רגועה, ברורה ומקדמת.">
+  <meta property="og:locale" content="he_IL">
+  <style>
+    :root {
+      --ink: #344b59;
+      --deep: #24495d;
+      --muted: #6f7d7c;
+      --cream: #faf4ed;
+      --paper: #fffdf9;
+      --rose: #d9a6a0;
+      --sage: #dfe6df;
+      --line: #dccdc2;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Helvetica Neue", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 14px clamp(18px, 5vw, 58px);
+      background: rgba(255, 253, 249, 0.88);
+      border-bottom: 1px solid rgba(220, 205, 194, 0.64);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: grid;
+      gap: 2px;
+      color: var(--deep);
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .brand small {
+      color: var(--rose);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .toplink {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 9px 20px;
+      border-radius: 999px;
+      background: var(--deep);
+      color: var(--white);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+      min-height: calc(92vh - 71px);
+      background:
+        linear-gradient(90deg, rgba(250, 244, 237, 0.98), rgba(250, 244, 237, 0.84)),
+        var(--cream);
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(34px, 6vw, 72px) clamp(22px, 6vw, 82px);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--rose);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      color: var(--deep);
+      font-size: clamp(40px, 5.1vw, 64px);
+      line-height: 1.05;
+      font-weight: 900;
+    }
+
+    .lead {
+      max-width: 690px;
+      margin: 26px 0 0;
+      color: #425d6a;
+      font-size: clamp(20px, 2vw, 25px);
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .hero-note {
+      max-width: 630px;
+      margin: 22px 0 0;
+      color: #52666e;
+      font-size: 19px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 26px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero-meta li {
+      padding: 7px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.68);
+      color: var(--deep);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-height: 52px;
+      margin-top: 28px;
+      padding: 13px 30px;
+      border-radius: 999px;
+      background: var(--deep);
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 15px 34px rgba(36, 73, 93, 0.18);
+    }
+
+    .hero-photo {
+      position: relative;
+      min-height: 500px;
+      overflow: hidden;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      display: block;
+    }
+
+    .hero-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(rgba(255, 253, 249, 0.06), rgba(36, 73, 93, 0.16));
+      pointer-events: none;
+    }
+
+    section {
+      padding: 82px clamp(20px, 5vw, 64px);
+    }
+
+    .band {
+      background: var(--sage);
+    }
+
+    .container {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+    }
+
+    .narrow {
+      width: min(820px, 100%);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      color: var(--deep);
+      font-size: clamp(31px, 4vw, 48px);
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 0 0 18px;
+      font-size: 20px;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .pill {
+      min-height: 118px;
+      padding: 22px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.64);
+      color: var(--deep);
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(28px, 5vw, 62px);
+      align-items: center;
+    }
+
+    .quote-panel {
+      padding: clamp(28px, 5vw, 44px);
+      border-right: 8px solid var(--rose);
+      background: rgba(255, 255, 255, 0.72);
+      border-radius: 8px;
+    }
+
+    .quote-panel p {
+      font-size: clamp(22px, 2.5vw, 30px);
+      line-height: 1.55;
+      font-weight: 800;
+      color: var(--deep);
+    }
+
+    .list {
+      display: grid;
+      gap: 13px;
+      margin: 26px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list li {
+      padding: 16px 18px;
+      border-right: 5px solid var(--rose);
+      background: rgba(255, 255, 255, 0.68);
+      font-size: 19px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .step {
+      padding: 24px 20px;
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .num {
+      color: var(--rose);
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .step h3 {
+      min-height: 62px;
+      margin: 10px 0 12px;
+      color: var(--deep);
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    .step p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .bonus {
+      width: min(880px, 100%);
+      margin: 0 auto;
+      padding: clamp(28px, 5vw, 46px);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .bonus h2 {
+      margin-bottom: 16px;
+    }
+
+    .bonus p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(28px, 5vw, 58px);
+      align-items: center;
+    }
+
+    .about-photo {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--cream);
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+
+    .about h2 {
+      margin-bottom: 8px;
+    }
+
+    .about-role {
+      margin: 0 0 22px;
+      color: var(--rose);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .cta {
+      background: var(--deep);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h2,
+    .cta p {
+      color: var(--white);
+    }
+
+    .cta .button {
+      background: var(--paper);
+      color: var(--deep);
+    }
+
+    .site-footer {
+      padding: 34px clamp(20px, 5vw, 64px);
+      background: var(--deep);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px 30px;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.88;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .split,
+      .steps,
+      .problem-grid,
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-photo {
+        order: -1;
+        min-height: 340px;
+      }
+
+      .hero-copy {
+        padding-top: 48px;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 340px;
+      }
+
+      .step h3 {
+        min-height: auto;
+      }
+
+      .about-photo img {
+        max-height: 380px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .toplink {
+        width: 100%;
+      }
+
+      section {
+        padding-block: 62px;
+      }
+
+      .hero-photo {
+        min-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="ניווט">
+    <div class="brand">
+      <small>SHINE BY MICHAL SLONIM</small>
+      <span>מיכל סלונים</span>
+    </div>
+    <a class="toplink" href="#contact">להזמנת הרצאה</a>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">הרצאה לארגונים, צוותים ומנהלים</p>
+        <h1>איך לנהל שיחה קשה</h1>
+        <p class="lead">שיחה קשה לא חייבת להסתיים בתסכול. כשיודעים לנהל אותה נכון, היא הופכת להזדמנות.</p>
+        <p class="hero-note">הרצאה קלילה, שוברת שגרה ומלאה בדוגמאות מהחיים ובכלים מעשיים שאפשר ליישם כבר מהשיחה הבאה.</p>
+        <ul class="hero-meta">
+          <li>משך ההרצאה: כשעה</li>
+          <li>לצוותים, מנהלים ואנשי שירות</li>
+          <li>כלים ליישום מיידי</li>
+        </ul>
+        <a class="button" href="#contact">להזמנת הרצאה</a>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/michal-hard-talk.jpg"
+             alt="מיכל סלונים"
+             onerror="this.onerror=null;this.src='https://michal-slonim-business-card.vercel.app/assets/michal-photo-BzyjjMOY.jpg';">
+      </div>
+    </header>
+
+    <section>
+      <div class="narrow">
+        <h2>כולנו פוגשים שיחות מאתגרות</h2>
+        <p>עם לקוח לא מרוצה, בין קולגות, מול עובדים, מנהלים או ספקים.</p>
+        <p>ברגעים כאלה, לכל אחד מאיתנו יש דפוס תגובה אחר: יש מי שנכנס לעימות, יש מי שנסגר ושותק, יש מי שקופא, מתבלבל או נמנע מהשיחה לחלוטין.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container">
+        <div class="narrow">
+          <h2>מה קורה לנו בשיחה קשה</h2>
+        </div>
+        <div class="problem-grid">
+          <div class="pill">נכנסים לעימות</div>
+          <div class="pill">נסגרים ושותקים</div>
+          <div class="pill">קופאים במקום</div>
+          <div class="pill">מתבלבלים ומאבדים את החוט</div>
+          <div class="pill">נמנעים מהשיחה לחלוטין</div>
+          <div class="pill">דוחים את השיחה שוב ושוב</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <h2>במה נעסוק?</h2>
+          <p>בהרצאה נלמד כלים פשוטים ויישומיים שיעזרו לנהל שיחות מורכבות בצורה רגועה, ברורה ומקדמת.</p>
+          <ul class="list">
+            <li>נכיר את סגנון התקשורת שלנו במצבי קונפליקט.</li>
+            <li>נבין למה שיחות מסוימות מפעילות אותנו יותר מאחרות.</li>
+            <li>נלמד כיצד להישאר נוכחים גם כשהרגשות עולים.</li>
+            <li>נקבל כלים לניהול שיחות שמובילות לפתרונות במקום להסלמה.</li>
+          </ul>
+          <a class="button" href="#contact">לבדוק אם ההרצאה מתאימה לצוות שלכם</a>
+        </div>
+        <div class="quote-panel">
+          <p>שיחה קשה יכולה להפוך להזדמנות: לחזק אמון, לשפר מערכות יחסים, לפתור קונפליקטים, ואפילו להפוך לקוח לא מרוצה ללקוח נאמן.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container">
+        <div class="narrow">
+          <h2>התוצאה?</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="num">01</div>
+            <h3>התמודדות טובה יותר עם קונפליקטים</h3>
+            <p>עובדים ומנהלים שיודעים איך להיכנס לשיחה מורכבת ולצאת ממנה עם פתרון.</p>
+          </div>
+          <div class="step">
+            <div class="num">02</div>
+            <h3>תקשורת יעילה ומכבדת</h3>
+            <p>שיח ברור שלא הופך לוויכוח אישי, גם כשיש חילוקי דעות אמיתיים.</p>
+          </div>
+          <div class="step">
+            <div class="num">03</div>
+            <h3>שיתוף פעולה בתוך הצוות</h3>
+            <p>פחות חיכוכים מיותרים, יותר אמון ועבודה משותפת.</p>
+          </div>
+          <div class="step">
+            <div class="num">04</div>
+            <h3>שירות טוב יותר ללקוחות</h3>
+            <p>גם שיחה עם לקוח לא מרוצה יכולה לחזק את הקשר במקום לשבור אותו.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bonus">
+        <h2>והבונוס?</h2>
+        <p>הכלים שנלמדים בהרצאה לא נשארים רק במקום העבודה. הם מלווים אותנו גם בבית, בזוגיות, בהורות ובכל מערכת יחסים משמעותית בחיים.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="narrow">
+        <h2>לא עוד הרצאה על "מה להגיד"</h2>
+        <p>נלמד להבין מה קורה לנו מבפנים ברגעי קונפליקט. כשמבינים את מקור התגובה שלנו, התקשורת משתנה באופן טבעי.</p>
+        <p>משם אפשר לנהל שיחות בצורה רגועה, ברורה ומקרבת יותר.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container about">
+        <div class="about-photo">
+          <img src="assets/michal-hard-talk.jpg"
+               alt="מיכל סלונים"
+               onerror="this.onerror=null;this.src='https://michal-slonim-business-card.vercel.app/assets/michal-photo-BzyjjMOY.jpg';">
+        </div>
+        <div>
+          <h2>קצת עליי</h2>
+          <p class="about-role">מיכל סלונים, מאמנת אישית וזוגית בשיטת סאטיה, פיתוח מנהלים</p>
+          <p>ב-12 השנים האחרונות אני מלווה אנשים, זוגות ומנהלים ביצירת תקשורת טובה יותר, בניהול מערכות יחסים ובהתמודדות עם אתגרים אישיים ומקצועיים.</p>
+          <p>לפני עולם האימון עבדתי במשך 15 שנה כסוכנת ביטוח וניהלתי סוכנות ביטוח משפחתית גדולה, עם כ-20 עובדים ואלפי לקוחות. הניסיון העסקי, לצד עולם האימון, מאפשר לי לחבר בין הבנה עמוקה של אנשים לבין המציאות היומיומית של ארגונים ועסקים.</p>
+          <p>לעולם האימון הגעתי במקרה, והתאהבתי.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="narrow">
+        <h2>רוצים להביא את ההרצאה לארגון שלכם?</h2>
+        <p>לפרטים ולהזמנת הרצאה, אשמח להיות בקשר.</p>
+        <a class="button" href="#contact">להזמנת הרצאה</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="narrow">
+        <h2>השאירו פרטים ונחזור אליכם</h2>
+        <p>מלאו את הטופס ונתאם שיחה קצרה על ההרצאה, הקהל והמועד המתאים.</p>
+      </div>
+      <div class="container">
+        <script type='text/javascript' src='//form2.ravpage.co.il/62da1f34fa7a783c6e29da765769940f6A55EB3A' charset='UTF-8'></script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://www.michalslonim.com/" target="_blank" rel="noopener">פיתוח מנהלים</a>
+      <a href="https://www.michalslonim.com/" target="_blank" rel="noopener">האתר שלי</a>
+      <a href="https://www.instagram.com/michal_slonim_life_coach?igsh=MTJwZjByd2xhdm5scw%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">האינסטגרם שלי</a>
+    </div>
+  </footer>
+</body>
+</html>
