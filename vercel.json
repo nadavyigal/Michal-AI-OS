@@ -3,6 +3,10 @@
     {
       "source": "/",
       "destination": "/family-business-preview.html"
+    },
+    {
+      "source": "/hard-talk",
+      "destination": "/hard-talk-preview.html"
     }
   ]
 }
